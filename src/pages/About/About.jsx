@@ -13,6 +13,7 @@ import cIcon from "../../assets/c.png";
 import gitIcon from "../../assets/git.png";
 import reactIcon from "../../assets/react.png";
 import profileImage from "../../assets/ShivamYadav_.jpg";
+import viteIcon from "../../assets/vite.svg"
 import "./about.css";
 
 const About = () => {
@@ -111,7 +112,7 @@ const About = () => {
             <div className="mt-12 font-dosis">
               <div className="flex flex-row justify-start">
                 <h1 className="text-4xl text-gray-500 font-bold">
-                  Stack I Use &#58;
+                  Stack I Use&#58;
                 </h1>
               </div>
               <div className="flex mt-4 pb-12">
@@ -135,6 +136,9 @@ const About = () => {
                 </span>
                 <span className="w-12 h-12 m-2 cursor-grab shadow-2xl flex justify-center items-center rounded-full">
                   <img src={reactIcon} />
+                </span>
+                <span className="w-12 h-12 m-2 cursor-grab shadow-2xl flex justify-center items-center rounded-full">
+                  <img src={viteIcon} />
                 </span>
               </div>
             </div>
