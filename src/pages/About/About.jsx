@@ -115,7 +115,7 @@ const About = () => {
                   Stack I Use&#58;
                 </h1>
               </div>
-              <div className="flex mt-4 pb-12">
+              <div className="flex flex-wrap mt-4 pb-12">
                 <span className="w-12 h-12 my-2 mr-2 -ml-1 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
                   <img src={htmlIcon} cl />
                 </span>
