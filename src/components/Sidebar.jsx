@@ -53,14 +53,14 @@ const Sidebar = () => {
             })}
             <hr className="my-6" />
             <a
-              href="/contact"
+              href="#"
               className="flex items-center px-4 py-2 mt-5 rounded-md text-gray-600 hover:text-gray-700 hover:bg-gray-200 transition-colors transform"
             >
               <MdContactPage className="w-5 h-5" />
               <span className="mx-4 font-medium">Contact</span>
             </a>
             <a
-              href="/others"
+              href="#"
               className="flex items-center px-4 py-2 mt-5 rounded-md text-gray-600 hover:text-gray-700 hover:bg-gray-200 transition-colors transform"
             >
               <MdWork className="w-5 h-5" />
