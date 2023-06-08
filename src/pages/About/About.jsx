@@ -115,29 +115,29 @@ const About = () => {
                   Stack I Use&#58;
                 </h1>
               </div>
-              <div className="flex flex-wrap mt-4 pb-12">
-                <span className="w-12 h-12 my-2 mr-2 -ml-1 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
+              <div className="flex flex-wrap gap-4 mt-4 pb-12">
+                <span className="w-12 h-12 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
                   <img src={htmlIcon} cl />
                 </span>
-                <span className="w-12 h-12 m-2 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
+                <span className="w-12 h-12 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
                   <img src={cssIcon} className="" />
                 </span>
-                <span className="w-12 h-12 m-2 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
+                <span className="w-12 h-12 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
                   <img src={javascriptIcon} />
                 </span>
-                <span className="w-12 h-12 m-2 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
+                <span className="w-12 h-12 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
                   <img src={tailwindIcon} />
                 </span>
-                <span className="w-12 h-12 m-2 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
+                <span className="w-12 h-12 cursor-grab shadow-2xl flex justify-center items-center rounded-full hover:shadow-none hover:-none">
                   <img src={cIcon} />
                 </span>
-                <span className="w-12 h-12 m-2 cursor-grab shadow-2xl flex justify-center items-center rounded-full">
+                <span className="w-12 h-12 cursor-grab shadow-2xl flex justify-center items-center rounded-full">
                   <img src={gitIcon} />
                 </span>
-                <span className="w-12 h-12 m-2 cursor-grab shadow-2xl flex justify-center items-center rounded-full">
+                <span className="w-12 h-12 cursor-grab shadow-2xl flex justify-center items-center rounded-full">
                   <img src={reactIcon} />
                 </span>
-                <span className="w-12 h-12 m-2 cursor-grab shadow-2xl flex justify-center items-center rounded-full">
+                <span className="w-12 h-12 cursor-grab shadow-2xl flex justify-center items-center rounded-full">
                   <img src={viteIcon} />
                 </span>
               </div>
