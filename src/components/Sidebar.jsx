@@ -1,9 +1,9 @@
 import React from "react";
-import { HiOutlineSearch, HiTicket, HiX } from "react-icons/hi";
-import { MdSettings } from "react-icons/md";
+import { HiX } from "react-icons/hi";
+import { MdContactPage, MdWork } from "react-icons/md";
 import { links } from "./Data";
 import { useGlobalContext } from "./Context";
-import Avatar from "../assets/ShivamYadav_.jpg"
+import Avatar from "../assets/ShivamYadav_.jpg";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -41,7 +41,7 @@ const Sidebar = () => {
                   className={`capitalize flex items-center px-4 py-2 ${
                     index === 1 ? "bg-slate-300 text-gray-700 mt-5" : null
                   } ${
-                    index !== 1 
+                    index !== 1
                       ? "mt-5 text-gray-600 hover:bg-slate-300 hover:text-gray-700 transition-colors duration-200 transform"
                       : null
                   } rounded-md`}
@@ -53,23 +53,23 @@ const Sidebar = () => {
             })}
             <hr className="my-6" />
             <a
-              href="/color-shade-generator"
+              href="/contact"
               className="flex items-center px-4 py-2 mt-5 rounded-md text-gray-600 hover:text-gray-700 hover:bg-gray-200 transition-colors transform"
             >
-              <HiTicket className="w-5 h-5" />
+              <MdContactPage className="w-5 h-5" />
               <span className="mx-4 font-medium">Contact</span>
             </a>
             <a
-              href="/color-shade-generator"
+              href="/others"
               className="flex items-center px-4 py-2 mt-5 rounded-md text-gray-600 hover:text-gray-700 hover:bg-gray-200 transition-colors transform"
             >
-              <MdSettings className="w-5 h-5" />
-              <span className="mx-4 font-medium">Random</span>
+              <MdWork className="w-5 h-5" />
+              <span className="mx-4 font-medium">Others</span>
             </a>
           </nav>
           <div className="flex items-center px-4 -mx-2 mt-5">
             <img
-            src={Avatar}
+              src={Avatar}
               alt="avatar"
               className="h-9 w-9 mx-2 object-center object-cover rounded-full"
             />
