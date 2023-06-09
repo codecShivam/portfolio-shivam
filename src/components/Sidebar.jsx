@@ -38,6 +38,7 @@ const Sidebar = () => {
                 <a
                   key={id}
                   href={url}
+                  onClick={() => closeSidebar(true)}
                   className={`capitalize flex items-center px-4 py-2 ${
                     index === 1 ? "bg-slate-300 text-gray-700 mt-5" : null
                   } ${
@@ -53,15 +54,17 @@ const Sidebar = () => {
             })}
             <hr className="my-6" />
             <a
+              onClick={() => closeSidebar(true)}
               href="#"
-              className="flex items-center px-4 py-2 mt-5 rounded-md text-gray-600 hover:text-gray-700 hover:bg-gray-200 transition-colors transform"
+              className="flex items-center px-4 py-2 mt-5 rounded-md text-gray-600 hover:text-gray-700 hover:bg-slate-300 transition-colors transform"
             >
               <MdContactPage className="w-5 h-5" />
               <span className="mx-4 font-medium">Contact</span>
             </a>
             <a
+              onClick={() => closeSidebar(true)}
               href="#"
-              className="flex items-center px-4 py-2 mt-5 rounded-md text-gray-600 hover:text-gray-700 hover:bg-gray-200 transition-colors transform"
+              className="flex items-center px-4 py-2 mt-5 rounded-md text-gray-600 hover:text-gray-700 hover:bg-slate-300 transition-colors transform"
             >
               <MdWork className="w-5 h-5" />
               <span className="mx-4 font-medium">Others</span>
