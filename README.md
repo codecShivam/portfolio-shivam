@@ -1,5 +1,5 @@
-# portfolio-shivam
-Welcome to my personal portfolio, showcasing my projects and skills in web development.
+# portfolio-shivam (personal website)
+Welcome to my personal website, showcasing my projects and skills in web development.
 
 ## :information_source: Requirements
 
