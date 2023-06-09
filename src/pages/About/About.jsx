@@ -148,7 +148,7 @@ const About = () => {
               </div>
               <div className="flex flex-wrap gap-4 mt-4 pb-12">
                 <span
-                  className={`w-12 h-12 mb-5 cursor-grab shadow-2xl rounded-full ${
+                  className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
                     hoveredIcon === "html" ? "text-vite" : ""
                   }`}
                   onMouseEnter={() => handleIconHover("html")}
@@ -164,7 +164,7 @@ const About = () => {
                   </div>
                 </span>
                 <span
-                  className={`w-12 h-12 cursor-grab shadow-2xl rounded-full ${
+                  className={`w-14 h-14 p-2 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
                     hoveredIcon === "css" ? "text-vite" : ""
                   }`}
                   onMouseEnter={() => handleIconHover("css")}
@@ -180,7 +180,7 @@ const About = () => {
                   </div>
                 </span>
                 <span
-                  className={`w-12 h-12 cursor-grab shadow-2xl rounded-full ${
+                  className={`w-14 h-14 p-2 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
                     hoveredIcon === "javascript" ? "text-vite" : ""
                   }`}
                   onMouseEnter={() => handleIconHover("javascript")}
@@ -198,7 +198,7 @@ const About = () => {
                   </div>
                 </span>
                 <span
-                  className={`w-12 h-12 cursor-grab shadow-2xl rounded-full ${
+                  className={`w-14 h-14 p-2 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
                     hoveredIcon === "tailwind" ? "text-vite" : ""
                   }`}
                   onMouseEnter={() => handleIconHover("tailwind")}
@@ -216,7 +216,7 @@ const About = () => {
                   </div>
                 </span>
                 <span
-                  className={`w-12 h-12 cursor-grab shadow-2xl rounded-full ${
+                  className={`w-14 h-14 p-2 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
                     hoveredIcon === "c" ? "text-vite" : ""
                   }`}
                   onMouseEnter={() => handleIconHover("c")}
@@ -232,7 +232,7 @@ const About = () => {
                   </div>
                 </span>
                 <span
-                  className={`w-12 h-12 cursor-grab shadow-2xl rounded-full ${
+                  className={`w-14 h-14 p-2 cursor-grab shadow-lg  shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
                     hoveredIcon === "git" ? "text-vite" : ""
                   }`}
                   onMouseEnter={() => handleIconHover("git")}
@@ -248,7 +248,7 @@ const About = () => {
                   </div>
                 </span>
                 <span
-                  className={`w-12 h-12 cursor-grab shadow-2xl rounded-full ${
+                  className={`w-14 h-14 p-2 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
                     hoveredIcon === "react" ? "text-vite" : ""
                   }`}
                   onMouseEnter={() => handleIconHover("react")}
@@ -266,7 +266,7 @@ const About = () => {
                   </div>
                 </span>
                 <span
-                  className={`w-12 h-12 cursor-grab shadow-2xl rounded-full ${
+                  className={`w-14 h-14 p-2 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
                     hoveredIcon === "vite" ? "text-vite" : ""
                   }`}
                   onMouseEnter={() => handleIconHover("vite")}
@@ -278,7 +278,9 @@ const About = () => {
                       hoveredIcon === "vite" ? "" : "hidden"
                     }`}
                   >
-                    <span className="bg-white p-1 px-2 font-medium rounded-full">Vite</span>
+                    <span className="bg-white p-1 px-2 font-medium rounded-full">
+                      Vite
+                    </span>
                   </div>
                 </span>
               </div>
