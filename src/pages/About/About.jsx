@@ -5,23 +5,16 @@ import redditIcon from "../../assets/reddit.png";
 import gmailIcon from "../../assets/gmail.png";
 import twitterIcon from "../../assets/twitter.png";
 import resumeIcon from "../../assets/link (1).png";
-import htmlIcon from "../../assets/html.png";
-import cssIcon from "../../assets/css.png";
-import javascriptIcon from "../../assets/javaScript.png";
-import tailwindIcon from "../../assets/tailwind.png";
-import cIcon from "../../assets/c.png";
-import gitIcon from "../../assets/git.png";
-import reactIcon from "../../assets/react.png";
 import profileImage from "../../assets/ShivamYadav_.jpg";
-import viteIcon from "../../assets/vite.svg";
+import { stacks } from "./Data";
 import "./about.css";
 import { useState } from "react";
 
 const About = () => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
 
-  const handleIconHover = (iconName) => {
-    setHoveredIcon(iconName);
+  const handleIconHover = (iconid) => {
+    setHoveredIcon(iconid);
   };
 
   const handleIconLeave = () => {
@@ -147,142 +140,27 @@ const About = () => {
                 </h1>
               </div>
               <div className="flex flex-wrap gap-4 mt-4 pb-12">
-                <span
-                  className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
-                    hoveredIcon === "html" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("html")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={htmlIcon} alt="" />
-                  <div
-                    className={`flex  mt-1 justify-center items-center text-gray-500 ${
-                      hoveredIcon === "html" ? "" : "hidden"
-                    }`}
-                  >
-                    <span className="bg-white p-1 px-2 rounded-full">HTML</span>
-                  </div>
-                </span>
-                <span
-                  className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
-                    hoveredIcon === "css" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("css")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={cssIcon} alt="" />
-                  <div
-                    className={`flex  mt-1 justify-center items-center text-gray-500 ${
-                      hoveredIcon === "css" ? "" : "hidden"
-                    }`}
-                  >
-                    <span className="bg-white p-1 px-2 rounded-full">CSS</span>
-                  </div>
-                </span>
-                <span
-                  className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
-                    hoveredIcon === "javascript" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("javascript")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={javascriptIcon} alt="" />
-                  <div
-                    className={`flex  mt-1 justify-center items-center text-gray-500 ${
-                      hoveredIcon === "javascript" ? "" : "hidden"
-                    }`}
-                  >
-                    <span className="bg-white p-1 px-2 rounded-full">
-                      JavaScript
+                {stacks.map((stack) => {
+                  const { id, name, icon } = stack;
+                  return (
+                    <span
+                      className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full `}
+                      onMouseEnter={() => handleIconHover(id)}
+                      onMouseLeave={handleIconLeave}
+                    >
+                      {icon}
+                      <div
+                        className={`flex  mt-1 justify-center items-center text-gray-500 ${
+                          hoveredIcon === id ? "" : "hidden"
+                        }`}
+                      >
+                        <span className="bg-white p-1 px-2 rounded-full">
+                          {name}
+                        </span>
+                      </div>
                     </span>
-                  </div>
-                </span>
-                <span
-                  className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
-                    hoveredIcon === "tailwind" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("tailwind")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={tailwindIcon} alt="" />
-                  <div
-                    className={`flex  mt-1 justify-center items-center text-gray-500 ${
-                      hoveredIcon === "tailwind" ? "" : "hidden"
-                    }`}
-                  >
-                    <span className="bg-white p-1 px-2 rounded-full">
-                      Tailwind
-                    </span>
-                  </div>
-                </span>
-                <span
-                  className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
-                    hoveredIcon === "c" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("c")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={cIcon} alt="" />
-                  <div
-                    className={`flex  mt-1 justify-center items-center text-gray-500 ${
-                      hoveredIcon === "c" ? "" : "hidden"
-                    }`}
-                  >
-                    <span className="bg-white p-1 px-4 rounded-full">C</span>
-                  </div>
-                </span>
-                <span
-                  className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg  shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
-                    hoveredIcon === "git" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("git")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={gitIcon} alt="" />
-                  <div
-                    className={`flex  mt-1 justify-center items-center text-gray-500 ${
-                      hoveredIcon === "git" ? "" : "hidden"
-                    }`}
-                  >
-                    <span className="bg-white p-1 px-2 rounded-full">Git</span>
-                  </div>
-                </span>
-                <span
-                  className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
-                    hoveredIcon === "react" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("react")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={reactIcon} alt="" />
-                  <div
-                    className={`flex  mt-1 justify-center items-center text-gray-500 ${
-                      hoveredIcon === "react" ? "" : "hidden"
-                    }`}
-                  >
-                    <span className="bg-white p-1 px-2 rounded-full">
-                      React
-                    </span>
-                  </div>
-                </span>
-                <span
-                  className={`w-14 h-14 p-2 mb-5 cursor-grab shadow-lg shadow-gray-400 hover:shadow-none -translate-y-1 transform duration-300 hover:translate-y-0 rounded-full ${
-                    hoveredIcon === "vite" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("vite")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={viteIcon} alt="" />
-                  <div
-                    className={`flex  mt-1 justify-center items-center text-gray-500 ${
-                      hoveredIcon === "vite" ? "" : "hidden"
-                    }`}
-                  >
-                    <span className="bg-white p-1 px-2 font-medium rounded-full">
-                      Vite
-                    </span>
-                  </div>
-                </span>
+                  );
+                })}
               </div>
             </div>
           </div>
