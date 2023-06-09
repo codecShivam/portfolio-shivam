@@ -1,6 +1,11 @@
 # portfolio-shivam
 Welcome to my personal portfolio, showcasing my projects and skills in web development.
 
+## :information_source: Requirements
+
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+
 # Process to Setup
 
 **To install this project**
@@ -23,10 +28,14 @@ npm run build
 
 ---
 
-Additional commands:
 
-**To lint the codebase**
+## :memo: License
 
-```
-npm run lint
-```
+This project is under MIT license.
+
+---
+
+Made with 💚 by Shivam :wave: [Get in touch!](https://github.com/codecShivam)
+
+[nodejs]: (https://nodejs.org/)
+[vc]: (https://code.visualstudio.com/)
