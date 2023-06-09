@@ -59,31 +59,26 @@ export const stacks = [
 export const socials = [
   {
     id: 1,
-    name: "github",
     url: "https://github.com/codecShivam",
     icon: <img src={githubIcon} className="h-10 w-10" alt="Github Icon" />,
   },
   {
     id: 2,
-    name: "linkedin",
     url: "https://www.linkedin.com/in/shivam-yadav-513005257/",
     icon: <img src={linkedinIcon} className="h-10 w-10" alt="LinkedIn Icon" />,
   },
   {
     id: 3,
-    name: "reddit",
     url: "https://www.reddit.com/user/codecShivam",
     icon: <img src={redditIcon} className="h-10 w-10" alt="Reddit Icon" />,
   },
   {
     id: 4,
-    name: "gmail",
     url: "mailto:codecshivam@gmail.com",
     icon: <img src={gmailIcon} className="h-10 w-10" alt="Gmail Icon" />,
   },
   {
     id: 5,
-    name: "twitter",
     url: "https://twitter.com/codecShivam",
     icon: <img src={twitterIcon} className="h-10 w-10" alt="Twitter Icon" />,
   },

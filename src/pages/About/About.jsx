@@ -59,7 +59,7 @@ const About = () => {
             <div className="md:flex place-items-baseline items-baseline">
               <div className="py-10 flex items-center space-x-4 justify-center">
                 {socials.map((social) => {
-                  const { id, name, url, icon } = social;
+                  const { id,  url, icon } = social;
                   return (
                     <a id={id} href={url} target="_blank" rel="noreferrer">
                       {icon}
