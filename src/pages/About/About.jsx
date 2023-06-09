@@ -1,12 +1,7 @@
 import React from "react";
-import githubIcon from "../../assets/github.png";
-import linkedinIcon from "../../assets/link.png";
-import redditIcon from "../../assets/reddit.png";
-import gmailIcon from "../../assets/gmail.png";
-import twitterIcon from "../../assets/twitter.png";
 import resumeIcon from "../../assets/link (1).png";
 import profileImage from "../../assets/ShivamYadav_.jpg";
-import { stacks } from "./Data";
+import { stacks, socials } from "./Data";
 import "./about.css";
 import { useState } from "react";
 
@@ -63,65 +58,14 @@ const About = () => {
             </div>
             <div className="md:flex place-items-baseline items-baseline">
               <div className="py-10 flex items-center space-x-4 justify-center">
-                <a
-                  href="https://github.com/codecShivam"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`relative rounded-full ${
-                    hoveredIcon === "github" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("github")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={githubIcon} className="h-10 w-10" alt="" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/shivam-yadav-513005257/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`relative rounded-full ${
-                    hoveredIcon === "linkedin" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("linkedin")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={linkedinIcon} className="h-10 w-10" alt="" />
-                </a>
-                <a
-                  href="https://www.reddit.com/user/codecShivam"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`relative rounded-full ${
-                    hoveredIcon === "reddit" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("reddit")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={redditIcon} className="h-10 w-10" alt="" />
-                </a>
-                <a
-                  href="mailto:codecshivam@gmail.com"
-                  rel="noreferrer"
-                  className={`relative rounded-full ${
-                    hoveredIcon === "gmail" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("gmail")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={gmailIcon} className="h-10 w-10" alt="" />
-                </a>
-                <a
-                  href="https://twitter.com/codecShivam"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`relative rounded-full ${
-                    hoveredIcon === "twitter" ? "text-vite" : ""
-                  }`}
-                  onMouseEnter={() => handleIconHover("twitter")}
-                  onMouseLeave={handleIconLeave}
-                >
-                  <img src={twitterIcon} className="h-10 w-10" alt="" />
-                </a>
+                {socials.map((social) => {
+                  const { id, name, url, icon } = social;
+                  return (
+                    <a id={id} href={url} target="_blank" rel="noreferrer">
+                      {icon}
+                    </a>
+                  );
+                })}
               </div>
               <a
                 className="p-2 bg-gray-800 text-white cursor-pointer rounded-lg relative px-10 w-max flex items-center m-auto space-x-4 border"
@@ -154,7 +98,7 @@ const About = () => {
                           hoveredIcon === id ? "" : "hidden"
                         }`}
                       >
-                        <span className="bg-white p-1 px-2 rounded-full">
+                        <span className="bg-slate-50 font-medium p-1 px-2 rounded-full">
                           {name}
                         </span>
                       </div>
