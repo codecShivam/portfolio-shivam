@@ -60,26 +60,26 @@ export const socials = [
   {
     id: 1,
     url: "https://github.com/codecShivam",
-    icon: <img src={githubIcon} className="h-10 w-10" alt="Github Icon" />,
+    icon: <img src={githubIcon} className="h-10 w-10 hover:h-12 hover:w-12 " alt="Github Icon" />,
   },
-  {
+  { 
     id: 2,
     url: "https://www.linkedin.com/in/shivam-yadav-513005257/",
-    icon: <img src={linkedinIcon} className="h-10 w-10" alt="LinkedIn Icon" />,
+    icon: <img src={linkedinIcon} className="h-10 w-10  hover:h-12 hover:w-12 " alt="LinkedIn Icon" />,
   },
   {
     id: 3,
     url: "https://www.reddit.com/user/codecShivam",
-    icon: <img src={redditIcon} className="h-10 w-10" alt="Reddit Icon" />,
+    icon: <img src={redditIcon} className="h-10 w-10  hover:h-12 hover:w-12 " alt="Reddit Icon" />,
   },
   {
     id: 4,
     url: "mailto:codecshivam@gmail.com",
-    icon: <img src={gmailIcon} className="h-10 w-10" alt="Gmail Icon" />,
+    icon: <img src={gmailIcon} className="h-10 w-10  hover:h-12 hover:w-12 " alt="Gmail Icon" />,
   },
   {
     id: 5,
     url: "https://twitter.com/codecShivam",
-    icon: <img src={twitterIcon} className="h-10 w-10" alt="Twitter Icon" />,
+    icon: <img src={twitterIcon} className="h-10 w-10  hover:h-12 hover:w-12 " alt="Twitter Icon" />,
   },
 ];

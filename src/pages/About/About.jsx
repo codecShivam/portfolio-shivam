@@ -2,8 +2,8 @@ import React from "react";
 import resumeIcon from "../../assets/link (1).png";
 import profileImage from "../../assets/ShivamYadav_.jpg";
 import { stacks, socials } from "./Data";
-import "./about.css";
 import { useState } from "react";
+import "./about.css";
 
 const About = () => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
@@ -61,7 +61,7 @@ const About = () => {
                 {socials.map((social) => {
                   const { id,  url, icon } = social;
                   return (
-                    <a id={id} href={url} target="_blank" rel="noreferrer">
+                    <a id={id} href={url} target="_blank" className="w-12 h-12 flex justify-center items-center" rel="noreferrer">
                       {icon}
                     </a>
                   );
