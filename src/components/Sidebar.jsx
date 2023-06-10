@@ -28,7 +28,7 @@ const Sidebar = () => {
           <HiX className="w-5 h-5" />
         </button>
         <h2 className="text-2xl font-semibold text-gray-800">
-          @Codec<span className="text-indigo-500">Shivam</span>
+          @Codec<span className="text-cyan-500">Shivam</span>
         </h2>
         <div className="flex flex-col   justify-between flex-1">
           <nav className="text">
