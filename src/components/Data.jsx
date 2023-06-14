@@ -5,8 +5,8 @@ import {
   FaFolderOpen,
   FaCalendarAlt,
 } from "react-icons/fa";
-
 import { HiDocument } from "react-icons/hi";
+import { MdContactPage, MdWork } from "react-icons/md";
 export const links = [
   {
     id: 1,
@@ -30,7 +30,7 @@ export const links = [
     id: 4,
     url: "#",
     text: "journey",
-    icon: <FaCalendarAlt className="w-5 h-5" />,
+    icon: <FaCalendarAlt className="w-5 h-5" />
   },
   {
     id: 5,
@@ -38,4 +38,16 @@ export const links = [
     text: "blogs",
     icon: <HiDocument className="w-5 h-5" />,
   },
+  {
+    id: 6,
+    url: "#",
+    text: "contact",
+    icon: <MdContactPage className="w-5 h-5" />
+  },
+  {
+    id: 7,
+    url: "#",
+    text: "others",
+    icon: <MdWork className="w-5 h-5" />
+  }
 ];
