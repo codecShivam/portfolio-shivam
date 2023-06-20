@@ -6,7 +6,7 @@ Welcome to my personal website, showcasing my projects and skills in web develop
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/)
 
-# Process to Setup
+# Process to Setup 
 
 **To install this project**
 
