@@ -1,41 +1,41 @@
-# vite React TypeScript tailwindcss starter
+# portfolio-shivam (personal website)
+Welcome to my personal website, showcasing my projects and skills in web development.
 
-Template for vite, React + tailwindcss + TypeScript projects with some tools preconfigured.
+## :information_source: Requirements
 
-## About
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
 
-Template for vite, React + tailwindcss + TypeScript projects with some tools preconfigured.
+# Process to Setup 
 
-![Screenshot](assets/screenshot.png)
+**To install this project**
 
-### Libraries
-
-- [React 18](https://reactjs.org/)
-- [React Router 6](https://reactrouter.com)
-- [tailwindcss 3](https://tailwindcss.com/)
-  - [tailwindcss forms plugin](https://tailwindcss-forms.vercel.app/)
-- [TypeScript 4.9.5](https://www.typescriptlang.org/)
-- [vite 4](https://vitejs.dev/)
-- [vitetest](https://vitest.dev/)
-
-### Tools
-
-- [commitlint 17](https://commitlint.js.org)
-- [Conventional Commits 1](https://www.conventionalcommits.org)
-- [editorconfig](https://editorconfig.org/)
-- [eslint 8](https://eslint.org/)
-- [husky 8](https://typicode.github.io/husky/#/)
-- [Prettier 2](https://prettier.io/)
-- [VS Code settings](https://code.visualstudio.com/)
-
-## Usage
-
-Create a new project from this template by clicking the "Use this template" button:
-
-![](assets/template-usage.png)
-
-```bash
-yarn
-yarn dev
-yarn test
 ```
+npm install
+```
+
+**To run the server**
+
+```
+npm start
+```
+
+**To build the app**
+
+```
+npm run build
+```
+
+---
+
+
+## :memo: License
+
+This project is under MIT license.
+
+---
+
+Made with 💚 by Shivam :wave: [Get in touch!](https://github.com/codecShivam)
+
+[nodejs]: (https://nodejs.org/)
+[vc]: (https://code.visualstudio.com/)
