@@ -1,17 +1,22 @@
-import React, { ReactElement } from 'react'
-import About from './pages/about/About'
-// import logo from './logo.svg'
-// import viteLogo from './vite.svg'
-// import tailwindLogo from './tailwind.svg'
-// import { Link } from 'react-router-dom'
+import { ReactElement, useState } from 'react';
+import Home from './components/Home';
+import Sidebar from './components/Sidebar';
+import Homepage from './pages/Homepage';
 
 function App(): ReactElement {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
 
   return (
-<div>
-<About />
-</div> 
-  )
+    <div>
+      <Home openSidebar={() => setIsSidebarOpen(true)} />
+      <Sidebar closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
+      <Homepage />
+    </div>
+  );
 }
 
-export default App
+export default App;
