@@ -2,9 +2,10 @@ import resumeIcon from "../../assets/link (1).png";
 import profileImage from "../../assets/ShivamYadav_.jpg";
 import { stacks, socials } from "./Data";
 import { useState } from "react";
-import "./about.css";
+import Home from "../../components/Home";
+import Sidebar from "../../components/Sidebar";
 
-const About = () => {
+const About = ({setIsSidebarOpen,closeSidebar,isSidebarOpen}) => {
   const [hoveredIcon, setHoveredIcon] = useState<number | null>(null);
 
   const handleIconHover = (iconid: number) => {
@@ -17,6 +18,8 @@ const About = () => {
 
   return (
     <div>
+      <Home openSidebar={() => setIsSidebarOpen(true)} />
+      <Sidebar closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
       <div className="bg"></div>
       <div className="bg bg2"></div>
       <div className="bg bg3"></div>
@@ -58,7 +61,7 @@ const About = () => {
             <div className="md:flex place-items-baseline items-baseline">
               <div className="py-10 flex items-center space-x-4 justify-center">
                 {socials.map((social) => {
-                  const { id,  url, icon } = social;
+                  const { id, url, icon } = social;
                   return (
                     <a id={id.toString()} href={url} target="_blank" className="w-12 h-12 flex justify-center items-center" rel="noreferrer">
                       {icon}
@@ -93,9 +96,8 @@ const About = () => {
                     >
                       {icon}
                       <div
-                        className={`flex  mt-1 justify-center items-center text-gray-500 ${
-                          hoveredIcon === id ? "" : "hidden"
-                        }`}
+                        className={`flex  mt-1 justify-center items-center text-gray-500 ${hoveredIcon === id ? "" : "hidden"
+                          }`}
                       >
                         <span className="bg-slate-50 font-medium p-1 px-2 rounded-full">
                           {name}

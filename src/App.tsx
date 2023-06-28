@@ -1,7 +1,9 @@
 import { ReactElement, useState } from 'react';
 import Home from './components/Home';
 import Sidebar from './components/Sidebar';
-import Homepage from './pages/Homepage';
+import About from './pages/about/About';
+import ContactUs from './pages/contact/Contact';
+// import Homepage from './pages/Homepage';
 
 function App(): ReactElement {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -14,7 +16,9 @@ function App(): ReactElement {
     <div>
       <Home openSidebar={() => setIsSidebarOpen(true)} />
       <Sidebar closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
-      <Homepage />
+      <About openSidebar={() => setIsSidebarOpen(true)} closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
+      <ContactUs openSidebar={() => setIsSidebarOpen(true)} closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
+
     </div>
   );
 }

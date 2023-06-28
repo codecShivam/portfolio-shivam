@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import './App.css'
 import App from './App'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import About from './pages/about/About'
+import ContactUs from './pages/contact/Contact'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,16 +14,14 @@ ReactDOM.render(
         <Route
           path="/about"
           element={
-            <>
-              <div className="text-center">
-                <h1 className="text-xl">About</h1>
-                <div>
-                  <Link to="/" className="text-purple-400 underline">
-                    Home
-                  </Link>
-                </div>
-              </div>
-            </>
+            <About />
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <ContactUs />
+            
           }
         />
       </Routes>
