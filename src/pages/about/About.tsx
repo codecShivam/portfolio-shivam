@@ -2,10 +2,9 @@ import resumeIcon from "../../assets/link (1).png";
 import profileImage from "../../assets/ShivamYadav_.jpg";
 import { stacks, socials } from "./Data";
 import { useState } from "react";
-import Home from "../../components/Home";
-import Sidebar from "../../components/Sidebar";
 
-const About = ({setIsSidebarOpen,closeSidebar,isSidebarOpen}) => {
+
+const About: React.FC = () => {
   const [hoveredIcon, setHoveredIcon] = useState<number | null>(null);
 
   const handleIconHover = (iconid: number) => {
@@ -18,11 +17,7 @@ const About = ({setIsSidebarOpen,closeSidebar,isSidebarOpen}) => {
 
   return (
     <div>
-      <Home openSidebar={() => setIsSidebarOpen(true)} />
-      <Sidebar closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
-      <div className="bg"></div>
-      <div className="bg bg2"></div>
-      <div className="bg bg3"></div>
+
       <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%]">
         <div className="content pt-12">
           <div className="mx-auto px-16" id="about">

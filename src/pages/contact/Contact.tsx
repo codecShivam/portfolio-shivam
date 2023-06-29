@@ -1,21 +1,13 @@
-import Home from "../../components/Home";
-import Sidebar from "../../components/Sidebar";
-
-const ContactUs = ({ setIsSidebarOpen, closeSidebar, isSidebarOpen }) => {
+const Contact: React.FC = () => {
     return (
-        <div>
-            <Home openSidebar={() => setIsSidebarOpen(true)} />
-            <Sidebar closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
-            <div className="bg"></div>
-            <div className="bg bg2"></div>
-            <div className="bg bg3"></div>
+        <div> 
             <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%]">
                 <div className="content pt-12">
                     <div className="mx-auto px-16" id="contact">
                         <div className="mb-5 flex items-center max-w-md">
                             <h2 className="text-gray-500 text-4xl font-bold">
                                 {" "}
-                                Contact Me 
+                                Contact Me
                             </h2>
                         </div>
                         <div className="flex flex-col lg:flex-row lg:items-center text-slate-900 dark:text-gray-500 lg:justify-between -mx-4">
@@ -106,7 +98,7 @@ const ContactUs = ({ setIsSidebarOpen, closeSidebar, isSidebarOpen }) => {
                                         </div>
                                         <div className="mb-6">
                                             <textarea
-                                                rows="8"
+                                                rows={6}
                                                 placeholder="Your Message"
                                                 className="
                                     w-full
@@ -968,4 +960,4 @@ const ContactUs = ({ setIsSidebarOpen, closeSidebar, isSidebarOpen }) => {
     );
 };
 
-export default ContactUs;
+export default Contact;
