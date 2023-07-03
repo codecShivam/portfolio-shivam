@@ -1,7 +1,15 @@
+import { useSpring, animated } from "react-spring";
+
 const Contact: React.FC = () => {
+
+    const animationProps = useSpring({
+        opacity: 1,
+        from: { opacity: 0 },
+        config: { duration: 700 },
+      });
     return (
-        <div> 
-            <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%]">
+        <animated.div style={animationProps}>
+                        <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%]">
                 <div className="content pt-12">
                     <div className="mx-auto px-16" id="contact">
                         <div className="mb-5 flex items-center max-w-md">
@@ -96,9 +104,9 @@ const Contact: React.FC = () => {
                                                 id="phone_number"
                                             />
                                         </div>
-                                        <div className="mb-6">
+                                        <div className="mb-[1.85rem]">
                                             <textarea
-                                                rows={6}
+                                                rows={7}
                                                 placeholder="Your Message"
                                                 className="
                                     w-full
@@ -956,7 +964,7 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </animated.div>
     );
 };
 

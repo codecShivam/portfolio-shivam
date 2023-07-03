@@ -1,11 +1,22 @@
+import { useState, useEffect } from "react";
+import { useSpring, animated } from "react-spring";
+import { stacks, socials } from "./Data";
 import resumeIcon from "../../assets/link (1).png";
 import profileImage from "../../assets/ShivamYadav_.jpg";
-import { stacks, socials } from "./Data";
-import { useState } from "react";
-
 
 const About: React.FC = () => {
   const [hoveredIcon, setHoveredIcon] = useState<number | null>(null);
+
+  useEffect(() => {
+    setTimeout(() => animatePage(), 0);
+  }, []);
+
+  const animatePage = () => {
+    const page = document.getElementById("about");
+    if (page) {
+      page.classList.add("slide-in-about");
+    }
+  };
 
   const handleIconHover = (iconid: number) => {
     setHoveredIcon(iconid);
@@ -15,12 +26,17 @@ const About: React.FC = () => {
     setHoveredIcon(null);
   };
 
-  return (
-    <div>
+  const animationProps = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 700 }
+  });
 
-      <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%]">
+  return (
+    <animated.div style={animationProps}>
+      <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%]" id="about">
         <div className="content pt-12">
-          <div className="mx-auto px-16" id="about">
+          <div className="mx-auto px-16" >
             <div className="text-6xl font-montserrat md:text-7xl text-center md:text-left font-medium text-gray-500 pb-4 mb-16">
               About Me
             </div>
@@ -106,7 +122,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 

@@ -11,13 +11,16 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.0.1",
-    "react-icons": "^4.10.1"
+    "react-icons": "^4.10.1",
+    "react-spring": "^9.7.2",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@heroicons/react": "^2.0.15",
     "@tailwindcss/forms": "^0.5.3",
     "@types/node": "18.13.0",
     "@types/react-dom": "^18.0.11",
+    "@types/react-transition-group": "^4.4.6",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
     "autoprefixer": "^10.4.13",
