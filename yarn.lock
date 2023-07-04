@@ -1601,6 +1601,11 @@
     "@react-spring/shared" "~9.7.3"
     "@react-spring/types" "~9.7.3"
 
+"@react-spring/rafz@^9.7.3":
+  version "9.7.3"
+  resolved "https://registry.npmjs.org/@react-spring/rafz/-/rafz-9.7.3.tgz"
+  integrity sha512-9vzW1zJPcC4nS3aCV+GgcsK/WLaB520Iyvm55ARHfM5AuyBqycjvh1wbmWmgCyJuX4VPoWigzemq1CaaeRSHhQ==
+
 "@react-spring/shared@~9.7.3":
   version "9.7.3"
   resolved "https://registry.npmjs.org/@react-spring/shared/-/shared-9.7.3.tgz"
