@@ -1,14 +1,10 @@
-// import { FaBars } from "react-icons/fa";
-// import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import Sidebar from "./Sidebar";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
-import Project from "../pages/projects/Projects";
 import Navbar from "./Navbar";
+import Project from "../pages/projects/Projects"
 
 const Home: React.FC = () => {
-
 
   return (
     <Router>
@@ -20,7 +16,7 @@ const Home: React.FC = () => {
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/project" element={<Project />} />
+          <Route path="/projects" element={<Project />} />
         </Routes>
       </main>
     </Router>

@@ -44,15 +44,15 @@ const Navbar: React.FC = () => {
         </Link>
       </CSSTransition>
       <CSSTransition
-        in={activeNav === "experience"}
+        in={activeNav === "projects"}
         timeout={500}
         classNames="fade"
       >
         <Link
-          to="/experience"
-          onClick={() => setActiveNav("experience")}
+          to="/projects"
+          onClick={() => setActiveNav("projects")}
           className={`transition-colors duration-300 ease-in-out ${
-            activeNav === "experience" ? "active" : ""
+            activeNav === "projects" ? "active" : ""
           }`}
         >
           <BiBook className="fill-current text-white" />

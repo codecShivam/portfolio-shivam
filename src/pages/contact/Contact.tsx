@@ -6,10 +6,10 @@ const Contact: React.FC = () => {
         opacity: 1,
         from: { opacity: 0 },
         config: { duration: 700 },
-      });
+    });
     return (
         <animated.div style={animationProps}>
-                        <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%]">
+            <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%]">
                 <div className="content pt-12">
                     <div className="mx-auto px-16" id="contact">
                         <div className="mb-5 flex items-center max-w-md">
