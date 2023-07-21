@@ -18,10 +18,12 @@ const Project: React.FC<ProjectProps> = ({
     githubLink,
 }) => {
     return (
-        <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
-            <img src={image} className="w-full" alt="" loading="lazy" />
-            <div className="dark:bg-dark-card p-4">
-                <h1 className="dark:text-light-heading font-semibold text-lg pt-1">{title}</h1>
+        <article className="rounded-xl  mt-10 mb-20 overflow-y-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
+          <div className="relative overflow-hidden transform transition-transform duration-300 hover:scale-110">
+        <img src={image} className="w-full" alt="" loading="lazy" />
+      </div>
+            <div className="dark:bg-dark-card  p-4">
+                <h1 className="dark:text-light-heading  font-semibold text-lg pt-1">{title}</h1>
                 <p className="text-content pt-4 font-light">{description}</p>
                 <h3 className="text-dark-heading dark:text-light-heading font-medium pt-4">
                     Tech Stack : <span className="font-light">{techstack}</span>
@@ -33,7 +35,7 @@ const Project: React.FC<ProjectProps> = ({
                             width="20"
                             height="20"
                             viewBox="0 0 20 20"
-                            fill="none"
+                            fill="#000"
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
@@ -46,7 +48,7 @@ const Project: React.FC<ProjectProps> = ({
                             href={previewLink}
                             target="_blank"
                             rel="noreferrer noopener"
-                            className="underline pl-2 font-light dark:text-white"
+                            className="underline  pl-2 font-semibold shadow-2xl "
                         >
                             Live Preview
                         </a>
@@ -57,7 +59,7 @@ const Project: React.FC<ProjectProps> = ({
                             width="20"
                             height="20"
                             viewBox="0 0 20 20"
-                            fill="none"
+                            fill="#000"
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
@@ -70,7 +72,7 @@ const Project: React.FC<ProjectProps> = ({
                             href={githubLink}
                             target="_blank"
                             rel="noreferrer noopener"
-                            className="underline pl-2 font-light dark:text-white"
+                            className="underline pl-2 font-semibold"
                         >
                             View Code
                         </a>
