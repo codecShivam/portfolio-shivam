@@ -1,35 +1,31 @@
-import projectImage1 from "../../assets/project1.jpg";
-import projectImage2 from "../../assets/project2.jpg";
-import projectImage3 from "../../assets/project3.jpg";
+import projectImage1 from "../../assets/pyDelhi.png";
+import projectImage2 from "../../assets/webDiary.png";
+import projectImage3 from "../../assets/grocery.png";
 
-// Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Project title 1",
+    title: "PyDelhi Conference",
     image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: "Built PyDelhi Conference Website - Empowering Python enthusiasts globally through open-source collaboration and innovation.",
+    techstack: "HTML/CSS, TailwindCSS, JavaScript, ReactJs",
+    previewLink: "https://pydelhiconf.netlify.app/",
+    githubLink: "https://github.com/codecShivam/conference",
   },
   {
-    title: "Project title 2",
+    title: "Web Diary",
     image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `Built Web Diary website - empowering your daily reflections and fostering personal growth. An open source contribution`,
+    techstack: "HTML/CSS, TailwindCSS, JavaScript",
+    previewLink: "https://github.com/codecShivam/JournalEase-Frontend",
+    githubLink: "https://github.com/codecShivam/JournalEase-Frontend",
   },
   {
-    title: "Project title 3",
+    title: "Grocery List",
     image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: ` Streamline shopping, save time! Experience the convenience of our user-friendly grocery list app, organized trips to the store for stress-free grocery runs.`,
+    techstack: "HTML/CSS, TailwindCSS, JavaScript, ReactJs",
+    previewLink: "https://grocery-list-repo.netlify.app/",
+    githubLink: "https://github.com/codecShivam/grocery-list",
   }
 ];
 
