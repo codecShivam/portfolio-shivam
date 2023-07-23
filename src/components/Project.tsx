@@ -18,9 +18,14 @@ const Project: React.FC<ProjectProps> = ({
     githubLink,
 }) => {
     return (
-        <article className="rounded-xl mt-10 mb-20 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
-      <div className="relative transform transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
-        <img src={image} className="w-full late-image" alt="" loading="lazy" />
+        <article className="rounded-xl mt-10 mb-20 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900 hover:shadow-lg hover:scale-105 hover:-translate-y-2 hover:translate-x-2 transition-transform duration-300">
+      <div className="relative overflow-hidden">
+        <img
+          src={image}
+          className="w-full animate-zoomInAnimation"
+          alt=""
+          loading="lazy"
+        />
       </div>
             <div className="dark:bg-dark-card  p-4">
                 <h1 className="dark:text-light-heading  font-semibold text-lg pt-1">{title}</h1>

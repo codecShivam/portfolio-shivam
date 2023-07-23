@@ -13,4 +13,16 @@
   .late-image {
     animation: fadeInImage 1s ease-out 500ms; 
   }
+@keyframes zoomInAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .animate-zoomInAnimation {
+    animation: zoomInAnimation 1s ease-in-out infinite alternate;
+  }
   
