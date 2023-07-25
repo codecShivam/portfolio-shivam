@@ -11,7 +11,7 @@ interface ProjectDetail {
   techstack: string;
   previewLink: string;
   githubLink: string;
-}
+};
 
 const About: React.FC = () => {
   useEffect(() => {
@@ -41,7 +41,6 @@ const About: React.FC = () => {
       <div className="content pt-12 overflow-y-auto " style={{ maxHeight: "100%" }}>
         <style>
           {`
-            /* Customize scrollbar for webkit-based browsers (e.g., Chrome, Safari) */
             ::-webkit-scrollbar {
               width: 4px; /* Set the width of the scrollbar */
             }
@@ -61,7 +60,6 @@ const About: React.FC = () => {
           `}
         </style>
         <div className="mx-auto px-16 ">
-          {/* Add overflow-hidden class to keep scrollbar within rounded container */}
           <main className="container mx-auto  max-width pt-10 mb-20">
             <section>
               <h1 className="text-2xl  text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
