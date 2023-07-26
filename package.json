@@ -11,10 +11,14 @@
   },
   "dependencies": {
     "@react-spring/rafz": "^9.7.3",
+    "@types/d3": "^7.4.0",
     "@vitejs/plugin-react": "^4.0.1",
+    "d3": "^7.8.5",
+    "lottie-web": "^5.12.2",
     "react-icons": "^4.10.1",
     "react-spring": "^9.7.2",
-    "react-transition-group": "^4.4.5"
+    "react-transition-group": "^4.4.5",
+    "use-interval": "^1.4.0"
   },
   "devDependencies": {
     "@heroicons/react": "^2.0.15",

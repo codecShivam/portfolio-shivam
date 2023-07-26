@@ -1,15 +1,18 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from "../pages/about/About";
-import Contact from "../pages/contact/Contact";
-import Navbar from "./Navbar";
-import Project from "../pages/projects/Projects"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import About from '../pages/about/About';
+import Contact from '../pages/contact/Contact';
+import Navbar from './Navbar';
+import Project from '../pages/projects/Projects';
+import AnimationComponent from './AnimationComponent'; // <-- Import the new component
 
 const Home: React.FC = () => {
-
   return (
     <Router>
       <main>
         <Navbar />
+        {/* Add the animation component here */}
+        <AnimationComponent />
+
         <div className="bg"></div>
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
