@@ -38,15 +38,27 @@ const AnimationComponent: FC<AnimationComponentProps> = () => {
   }, []);
 
   const isHomePage = location.pathname === "/";
+  const isBuildingPage = location.pathname === "/service";
   const renderDiv = isHomePage ? (
     <div className="flex flex-col items-center justify-center absolute top-[24%] left-1/3">
-      <Animation data={hello} width={250} height={250} className="c-slider__animation" />
+      <Animation
+        data={hello}
+        width={250}
+        height={250}
+        className="c-slider__animation"
+      />
       <h1 className="flex flex-row justify-center text-white ">
         <span className="text-[4rem] ">I am Shivam Yadav</span>
       </h1>
       <h2 className="text-white mt-4 flex flex-row items-center justify-center text-[1.8rem]">
         <span key={titles[activeIndex]}>{titles[activeIndex]}</span>
       </h2>
+    </div>
+  ) : isBuildingPage ? (
+    <div className="flex flex-col items-center justify-center absolute top-[24%] left-1/3">
+      <h1 className="flex flex-row justify-center text-white ">
+        <span className="text-[4rem] ">Under Construction</span>
+      </h1>
     </div>
   ) : null;
 
