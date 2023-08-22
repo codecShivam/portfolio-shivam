@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
     });
     return (
         <animated.div style={animationProps}>
-            <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%]">
+            <div className="absolute sm:left-[10%] left-0 sm:top-[11%] top-[6%] right-0 sm:right-[10%] ">
                 <div className="content pt-12">
                     <div className="mx-auto px-16" id="contact">
                         <div className="mb-5 flex items-center max-w-md">
@@ -34,14 +34,14 @@ const Contact: React.FC = () => {
                                 </div>
                             </div>
                             <div
-                                className="w-full lg:w-1/2 mb-24 xl:w-5/12 px-4 z-20"
+                                className="w-full lg:w-1/2 mb-24 xl:w-5/12 px-4 "
                                 data-aos="fade-up"
                                 data-aos-delay="500"
                                 data-aos-duration="2000"
                             >
-                                <div className="bg-gray-800 relative rounded-lg p-8 sm:p-12 shadow-lg">
+                                <div className="bg-gray-800 relative rounded-lg p-8 sm:p-12 shadow-lg ">
                                     <form>
-                                        <div className="mb-6">
+                                        <div className="mb-6 ">
                                             <input
                                                 type="text"
                                                 placeholder="Your Name"
