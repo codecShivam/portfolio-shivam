@@ -63,7 +63,7 @@ const AnimationComponent: FC<AnimationComponentProps> = () => {
   ) : null;
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-[#000300]">
       <div className="c-canvas" id="canvas" ref={canvasRef} />
       {renderDiv}
     </div>

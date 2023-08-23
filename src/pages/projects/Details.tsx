@@ -17,10 +17,10 @@ export const projectDetails = [
   {
     title: "Portfolio",
     image: projectImage3,
-    description: "Built PyDelhi Conference Website - Empowering Python enthusiasts globally through open-source collaboration and innovation.",
-    techstack: "HTML/CSS, TailwindCSS, JavaScript, ReactJs",
-    previewLink: "https://pydelhiconf.netlify.app/",
-    githubLink: "https://github.com/codecShivam/conference",
+    description: "Crafted Portfolio Website - Showcasing my journey with TypeScript development, highlighting projects and skills that reflect my dedication.",
+    techstack: "HTML/CSS, TailwindCSS, JavaScript, ReactJs, Typescript",
+    previewLink: "https://codecshivam.netlify.app/",
+    githubLink: "https://github.com/codecShivam/portfolio-shivam/",
   },
   {
     title: "Web Diary",
@@ -33,10 +33,10 @@ export const projectDetails = [
   {
     title: "Vital Hope",
     image: projectImage2,
-    description: `Built Web Diary website - empowering your daily reflections and fostering personal growth. An open source contribution`,
+    description: `Built Vital Hope website - Offer resources and support for cancer patients, survivors, and caregivers`,
     techstack: "HTML/CSS, TailwindCSS, JavaScript",
-    previewLink: "https://github.com/codecShivam/JournalEase-Frontend",
-    githubLink: "https://github.com/codecShivam/JournalEase-Frontend",
+    previewLink: "https://vitalhope.netlify.app/",
+    githubLink: "https://github.com/codecShivam/vital-hope",
   },
   {
     title: "Grocery List",
@@ -47,12 +47,12 @@ export const projectDetails = [
     githubLink: "https://github.com/codecShivam/grocery-list",
   },
   {
-    title: "Grocery List",
+    title: "Shade Hunt",
     image: projectImage6,
-    description: ` Streamline shopping, save time! Experience the convenience of our user-friendly grocery list app, organized trips to the store for stress-free grocery runs.`,
+    description: `Shade hunt: A react web app that instantly displays the color you enter and provides its corresponding hexcode.`,
     techstack: "HTML/CSS, TailwindCSS, JavaScript, ReactJs",
-    previewLink: "https://grocery-list-repo.netlify.app/",
-    githubLink: "https://github.com/codecShivam/grocery-list",
+    previewLink: "https://shadehunt.netlify.app/",
+    githubLink: "https://github.com/codecShivam/shade-hunt/",
   },
 
 ];
