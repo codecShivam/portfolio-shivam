@@ -60,7 +60,7 @@ const About: React.FC = () => {
           `}
         </style>
         <div className="mx-auto px-16 ">
-          <main className="container mx-auto  max-width pt-10 mb-20">
+          <main className=" mx-auto   pt-10 mb-20">
             <section>
               <h1 className="text-2xl  text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
                 Projects
