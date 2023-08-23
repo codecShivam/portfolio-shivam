@@ -8,96 +8,47 @@ import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 
+const iconMap: Record<string, React.ReactElement> = {
+  "": <AiOutlineHome />,
+  about: <AiOutlineUser />,
+  projects: <BiBook />,
+  service: <RiServiceLine />,
+  contact: <BiMessageSquareDetail />,
+};
+
+const NavbarLink: React.FC<{
+  to: string;
+  icon: React.ReactElement;
+  active: boolean;
+  onClick: () => void;
+}> = ({ to, icon, active, onClick }) => (
+  <CSSTransition in={active} timeout={500} classNames="fade">
+    <Link
+      to={to}
+      onClick={onClick}
+      className={`transition-colors duration-300 ease-in-out ${
+        active ? "active" : ""
+      }`}
+    >
+      {icon}
+    </Link>
+  </CSSTransition>
+);
+
 const Navbar: React.FC = () => {
   const [activeNav, setActiveNav] = useState<string>("");
 
   return (
     <nav className="nav">
-      <CSSTransition
-        in={activeNav === ""}
-        timeout={500}
-        classNames="fade"
-      >
-        <Link
-          to="/"
-          onClick={() => setActiveNav("")}
-          className={`transition-colors duration-300 ease-in-out ${
-            activeNav === "" ? "active" : ""
-          }`}
-        >
-          <AiOutlineHome className="fill-current text-white" />
-        </Link>
-      </CSSTransition>
-      <CSSTransition
-        in={activeNav === "about"}
-        timeout={500}
-        classNames="fade"
-      >
-        <Link
-          to="/about"
-          onClick={() => setActiveNav("about")}
-          className={`transition-colors duration-300 ease-in-out ${
-            activeNav === "about" ? "active" : ""
-          }`}
-        >
-          <AiOutlineUser className="fill-current text-white" />
-        </Link>
-      </CSSTransition>
-      <CSSTransition
-        in={activeNav === "projects"}
-        timeout={500}
-        classNames="fade"
-      >
-        <Link
-          to="/projects"
-          onClick={() => setActiveNav("projects")}
-          className={`transition-colors duration-300 ease-in-out ${
-            activeNav === "projects" ? "active" : ""
-          }`}
-        >
-          <BiBook className="fill-current text-white" />
-        </Link>
-      </CSSTransition>
-      <CSSTransition
-        in={activeNav === "service"}
-        timeout={500}
-        classNames="fade"
-      >
-        <Link
-          to="/service"
-          onClick={() => setActiveNav("service")}
-          className={`transition-colors duration-300 ease-in-out ${
-            activeNav === "service" ? "active" : ""
-          }`}
-        >
-          <RiServiceLine className="fill-current text-white" />
-        </Link>
-      </CSSTransition>
-      <CSSTransition
-        in={activeNav === "contact"}
-        timeout={500}
-        classNames="fade"
-      >
-        <Link
-          to="/contact"
-          onClick={() => setActiveNav("contact")}
-          className={`transition-colors duration-300 ease-in-out ${
-            activeNav === "contact" ? "active" : ""
-          }`}
-        >
-          <BiMessageSquareDetail className="fill-current text-white" />
-        </Link>
-      </CSSTransition>
-
-      <CSSTransition
-        in={true}
-        timeout={500}
-        classNames="fade"
-      >
-        <div className="animation-container">
-          {/* Render your page content here */}
-        </div>
-      </CSSTransition>
+      {Object.keys(iconMap).map((navKey) => (
+        <NavbarLink
+          key={navKey}
+          to={`/${navKey}`}
+          icon={iconMap[navKey]}
+          active={activeNav === navKey}
+          onClick={() => setActiveNav(navKey)}
+        />
+      ))}
     </nav>
   );
 };
