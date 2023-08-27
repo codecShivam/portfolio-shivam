@@ -14,7 +14,7 @@ const About: React.FC = () => {
   const animatePage = () => {
     const page = document.getElementById("about");
     if (page) {
-      page.classList.add("slide-in-about");
+      page.classList.add("slide-in-left");
     }
   };
 
