@@ -8,9 +8,9 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import "./nav.css";
 
 const iconMap: Record<string, React.ReactElement> = {
-  "": <AiOutlineHome />,
   about: <AiOutlineUser />,
   projects: <BiBook />,
+  "": <AiOutlineHome />,
   service: <RiServiceLine />,
   contact: <BiMessageSquareDetail />,
 };
