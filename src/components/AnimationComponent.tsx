@@ -48,7 +48,9 @@ const AnimationComponent: FC<AnimationComponentProps> = () => {
         className="c-slider__animation"
       />
       <h1 className=" text-white">
-        <span className="md:text-[3.7rem] sm:text-[3rem] text-[2rem] flex flex-row justify-center items-center">I am Shivam Yadav</span>
+        <span className="md:text-[3.7rem] sm:text-[3rem] text-[2rem] flex flex-row justify-center items-center">
+          I am Shivam Yadav
+        </span>
       </h1>
       <h2 className="text-white mt-4 flex flex-row items-center justify-center sm:text-[1.8rem] text-[1rem]">
         <span key={titles[activeIndex]}>{titles[activeIndex]}</span>
