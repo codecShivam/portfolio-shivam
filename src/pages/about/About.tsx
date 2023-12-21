@@ -82,7 +82,7 @@ const About: React.FC = () => {
               </div>
               <a
                 className="p-2 bg-gray-800 text-white cursor-pointer rounded-lg relative px-10 w-max flex items-center m-auto space-x-4 border"
-                href="https://drive.google.com/file/d/1f08lV0BybC44S4d-p0ZqOEWQY8dWw8xR/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Ld-S8ESLBcy_Lf6l2tZoGS0jQesffesP/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
